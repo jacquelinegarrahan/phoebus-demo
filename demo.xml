@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf8'?>
+<config name="Demo">
+    <component name="GROUP1">
+        <pv name="DEMO:PV1">
+            <description>
+                <enabled>true</enabled>
+            </description>
+        </pv>
+        <pv name="DEMO:PV2">
+            <description>
+                <enabled>true</enabled>
+            </description>
+        </pv>
+        <pv name="DEMO:PV3">
+            <description>
+                <enabled>true</enabled>
+            </description>
+        </pv>
+    </component>
+    <component name="GROUP2">
+        <component name="GROUP3">
+            <pv name="DEMO:PV4">
+                <description>
+                    <enabled>true</enabled>
+                </description>
+            </pv>
+            <pv name="DEMO:PV5">
+                <description>
+                    <enabled>true</enabled>
+                </description>
+            </pv>
+        </component>
+        <pv name="DEMO:PV6">
+            <description>
+                <enabled>true</enabled>
+            </description>
+        </pv>
+        <pv name="DEMO:PV7">
+            <description>
+                <enabled>true</enabled>
+            </description>
+        </pv>
+    </componenet>
+</config>
