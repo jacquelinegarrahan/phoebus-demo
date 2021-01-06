@@ -394,6 +394,6 @@ def build_config_file(tree, config_name):
 if __name__ == "__main__":
     items, top_level_node = parse_tree("alh_files/mgnt.alhConfig")
     tree=build_tree(items, top_level_node)
-    build_config_file(tree, "Magnets")
+    build_config_file(tree, "Accelerator")
 
 
