@@ -1,0 +1,29 @@
+GROUP NULL BEND:LI24:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_li24_bend.edl
+$ALIAS BEND
+$GUIDANCE
+Li24 Bend Magnets
+   Group Name: BEND:LI24:MG01
+   Summary PV:  BEND:LI24:MG01:STATSUMY
+$END
+
+GROUP BEND:LI24:MG01  BEND:LI24:790
+   $COMMAND edm -x -eolc -noedit -m "DEV=BEND:LI24:790" mgnt_unit.edl
+CHANNEL   BEND:LI24:790       BEND:LI24:790:STATMSG                 -----
+   $FORCEPV BEND:LI24:790:STATMSGSV -DATL 1 0
+
+GROUP BEND:LI24:MG01  BTRM:LI24:720
+   $COMMAND edm -x -eolc -noedit -m "DEV=BTRM:LI24:720" mgnt_unit.edl
+CHANNEL   BTRM:LI24:720       BTRM:LI24:720:STATMSG                 -----
+   $FORCEPV BTRM:LI24:720:STATMSGSV -DATL 1 0
+
+GROUP BEND:LI24:MG01  BTRM:LI24:810
+   $COMMAND edm -x -eolc -noedit -m "DEV=BTRM:LI24:810" mgnt_unit.edl
+CHANNEL   BTRM:LI24:810       BTRM:LI24:810:STATMSG                 -----
+   $FORCEPV BTRM:LI24:810:STATMSGSV -DATL 1 0
+
+GROUP BEND:LI24:MG01  BTRM:LI24:880
+   $COMMAND edm -x -eolc -noedit -m "DEV=BTRM:LI24:880" mgnt_unit.edl
+CHANNEL   BTRM:LI24:880       BTRM:LI24:880:STATMSG                 -----
+   $FORCEPV BTRM:LI24:880:STATMSGSV -DATL 1 0
+

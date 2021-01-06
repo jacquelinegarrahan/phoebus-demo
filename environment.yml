@@ -1,0 +1,9 @@
+name: phoebus-demo
+dependencies:
+  - python =3.8
+  - pcaspy
+  - p4p
+  - pyepics
+  - psutil
+  - treelib
+  - kafka-python

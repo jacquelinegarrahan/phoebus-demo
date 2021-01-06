@@ -1,0 +1,20 @@
+GROUP NULL LGPS:LI21L2:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_li21_lgps.edl
+$ALIAS LGPS
+$GUIDANCE
+LI21L2 lgps magnets
+   Group Name: LGPS:LI21L2:MG01
+   Summary PV:  LGPS:LI21L2:MG01:STATSUMY
+$END
+
+
+GROUP LGPS:LI21L2:MG01  LGPS:LI21:2
+   $COMMAND edm -x -eolc -noedit -m "DEV=LGPS:LI21:2" mgnt_unit.edl
+CHANNEL   LGPS:LI21:2       LGPS:LI21:2:STATMSG                 ----L
+   $FORCEPV LGPS:LI21:2:STATMSGSV -DATL 1 0
+
+GROUP LGPS:LI21L2:MG01  LGPS:LI21:3
+   $COMMAND edm -x -eolc -noedit -m "DEV=LGPS:LI21:3" mgnt_unit.edl
+CHANNEL   LGPS:LI21:3       LGPS:LI21:3:STATMSG                 ----L
+   $FORCEPV LGPS:LI21:3:STATMSGSV -DATL 1 0
+

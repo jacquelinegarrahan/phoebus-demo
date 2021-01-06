@@ -1,0 +1,19 @@
+GROUP NULL LGPS:IN20GR:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_in20_lgps.edl
+$ALIAS LGPS
+$GUIDANCE
+IN20GR lgps magnets
+   Group Name: LGPS:IN20GR:MG01
+   Summary PV:  LGPS:IN20GR:MG01:STATSUMY
+$END
+
+
+GROUP LGPS:IN20GR:MG01  LGPS:IN20:1
+   $COMMAND edm -x -eolc -noedit -m "DEV=LGPS:IN20:1" mgnt_unit.edl
+CHANNEL   LGPS:IN20:1       LGPS:IN20:1:STATMSG                 ----L
+   $FORCEPV LGPS:IN20:1:STATMSGSV -DATL 1 0
+
+GROUP LGPS:IN20GR:MG01  LGPS:IN20:2
+   $COMMAND edm -x -eolc -noedit -m "DEV=LGPS:IN20:2" mgnt_unit.edl
+CHANNEL   LGPS:IN20:2       LGPS:IN20:2:STATMSG                 ----L
+   $FORCEPV LGPS:IN20:2:STATMSGSV -DATL 1 0

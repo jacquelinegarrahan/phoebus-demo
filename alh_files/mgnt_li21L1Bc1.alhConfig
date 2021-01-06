@@ -1,0 +1,17 @@
+GROUP NULL MGNT:LI21L1BC1:1
+   $COMMAND edm -x -eolc -noedit mgnt_li21_main.edl
+
+$ALIAS LI21L1BC1
+$GUIDANCE
+li21L1Bc1 Magnets
+   Group Name: MGNT:LI21L1BC1:1
+   Summary PV:  MGNT:LI21L1BC1:1:STATSUMY
+$END
+
+   INCLUDE MGNT:LI21L1BC1:1 ./mgnt_li21L1Bc1_bend.alhConfig
+   INCLUDE MGNT:LI21L1BC1:1 ./mgnt_li21L1Bc1_btrm.alhConfig
+   INCLUDE MGNT:LI21L1BC1:1 ./mgnt_li21L1Bc1_quad.alhConfig
+   INCLUDE MGNT:LI21L1BC1:1 ./mgnt_li21L1Bc1_xcor.alhConfig
+   INCLUDE MGNT:LI21L1BC1:1 ./mgnt_li21L1Bc1_ycor.alhConfig
+   INCLUDE MGNT:LI21L1BC1:1 ./mgnt_li21L1Bc1_lgps.alhConfig
+

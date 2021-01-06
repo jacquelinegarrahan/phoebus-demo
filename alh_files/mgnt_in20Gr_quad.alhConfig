@@ -1,0 +1,20 @@
+GROUP NULL QUAD:IN20GR:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_in20_quad.edl
+$ALIAS QUAD
+$GUIDANCE
+IN20GR quad magnets
+   Group Name: QUAD:IN20GR:MG01
+   Summary PV:  QUAD:IN20GR:MG01:STATSUMY
+$END
+
+
+GROUP QUAD:IN20GR:MG01  QUAD:IN20:121
+   $COMMAND edm -x -eolc -noedit -m "DEV=QUAD:IN20:121" mgnt_unit.edl
+CHANNEL   QUAD:IN20:121       QUAD:IN20:121:STATMSG                 ----L
+   $FORCEPV QUAD:IN20:121:STATMSGSV -DATL 1 0
+
+GROUP QUAD:IN20GR:MG01  QUAD:IN20:122
+   $COMMAND edm -x -eolc -noedit -m "DEV=QUAD:IN20:122" mgnt_unit.edl
+CHANNEL   QUAD:IN20:122       QUAD:IN20:122:STATMSG                 ----L
+   $FORCEPV QUAD:IN20:122:STATMSGSV -DATL 1 0
+

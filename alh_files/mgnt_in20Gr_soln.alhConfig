@@ -1,0 +1,20 @@
+GROUP NULL SOLN:IN20GR:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_in20_soln.edl
+$ALIAS SOLN
+$GUIDANCE
+IN20GR soln magnets
+   Group Name: SOLN:IN20GR:MG01
+   Summary PV:  SOLN:IN20GR:MG01:STATSUMY
+$END
+
+
+GROUP SOLN:IN20GR:MG01  SOLN:IN20:111
+   $COMMAND edm -x -eolc -noedit -m "DEV=SOLN:IN20:111" mgnt_unit.edl
+CHANNEL   SOLN:IN20:111       SOLN:IN20:111:STATMSG                 ----L
+   $FORCEPV SOLN:IN20:111:STATMSGSV -DATL 1 0
+
+GROUP SOLN:IN20GR:MG01  SOLN:IN20:121
+   $COMMAND edm -x -eolc -noedit -m "DEV=SOLN:IN20:121" mgnt_unit.edl
+CHANNEL   SOLN:IN20:121       SOLN:IN20:121:STATMSG                 ----L
+   $FORCEPV SOLN:IN20:121:STATMSGSV -DATL 1 0
+

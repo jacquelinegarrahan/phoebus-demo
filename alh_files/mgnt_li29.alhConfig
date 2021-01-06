@@ -1,0 +1,15 @@
+GROUP NULL MGNT:LI29:1
+   $COMMAND edm -x -eolc -noedit mgnt_li29_main.edl
+
+$ALIAS LI29
+$GUIDANCE
+LI29 Magnets
+   Group Name: MGNT:LI29:1
+   Summary PV:  MGNT:LI29:1:STATSUMY
+$END
+
+   INCLUDE MGNT:LI29:1 ./mgnt_li29_lgps.alhConfig
+   INCLUDE MGNT:LI29:1 ./mgnt_li29_quad.alhConfig
+   INCLUDE MGNT:LI29:1 ./mgnt_li29_xcor.alhConfig
+   INCLUDE MGNT:LI29:1 ./mgnt_li29_ycor.alhConfig
+

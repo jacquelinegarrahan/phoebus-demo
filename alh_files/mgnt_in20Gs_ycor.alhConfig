@@ -1,0 +1,19 @@
+GROUP NULL YCOR:IN20GS:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_in20_ycor.edl
+$ALIAS YCOR
+$GUIDANCE
+IN20GS ycor magnets
+   Group Name: YCOR:IN20GS:MG01
+   Summary PV:  YCOR:IN20GS:MG01:STATSUMY
+$END
+
+GROUP YCOR:IN20GS:MG01  YCOR:IN20:812
+   $COMMAND edm -x -eolc -noedit -m "DEV=YCOR:IN20:812" mgnt_unit.edl
+CHANNEL   YCOR:IN20:812       YCOR:IN20:812:STATMSG                 ----L
+   $FORCEPV YCOR:IN20:812:STATMSGSV -DATL 1 0
+
+GROUP YCOR:IN20GS:MG01  YCOR:IN20:832
+   $COMMAND edm -x -eolc -noedit -m "DEV=YCOR:IN20:832" mgnt_unit.edl
+CHANNEL   YCOR:IN20:832       YCOR:IN20:832:STATMSG                 ----L
+   $FORCEPV YCOR:IN20:832:STATMSGSV -DATL 1 0
+

@@ -1,0 +1,17 @@
+GROUP NULL MGNT:BSYA:1
+   $COMMAND edm -x -eolc -noedit mgnt_bsy0_main.edl
+
+
+$ALIAS BSYA
+$GUIDANCE
+bsyA Magnet
+   Group Name: MGNT:BSYA:1
+   Summary PV:  MGNT:BSYA:1:STATSUMY
+$END
+
+   INCLUDE MGNT:BSYA:1 ./mgnt_bsyA_bend.alhConfig
+   INCLUDE MGNT:BSYA:1 ./mgnt_bsyA_kick.alhConfig
+   INCLUDE MGNT:BSYA:1 ./mgnt_bsyA_lgps.alhConfig
+   INCLUDE MGNT:BSYA:1 ./mgnt_bsyA_ycor.alhConfig
+
+

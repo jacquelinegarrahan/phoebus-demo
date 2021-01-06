@@ -1,0 +1,24 @@
+GROUP NULL BEND:IN20IS:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_in20_bend.edl
+$ALIAS BEND
+$GUIDANCE
+IN20IS bend magnets
+   Group Name: BEND:IN20IS:MG01
+   Summary PV:  BEND:IN20IS:MG01:STATSUMY
+$END
+
+
+#GROUP BEND:IN20IS:MG01  BEND:IN20:661
+#   $COMMAND edm -x -eolc -noedit -m "DEV=BEND:IN20:661" mgnt_unit.edl
+#CHANNEL   BEND:IN20:661       BEND:IN20:661:STATMSG                 ----L
+
+GROUP BEND:IN20IS:MG01  BEND:IN20:931
+   $COMMAND edm -x -eolc -noedit -m "DEV=BEND:IN20:931" mgnt_unit.edl
+CHANNEL   BEND:IN20:931       BEND:IN20:931:STATMSG                 ----L
+   $FORCEPV BEND:IN20:931:STATMSGSV -DATL 1 0
+
+GROUP BEND:IN20IS:MG01  BTRM:IN20:661
+   $COMMAND edm -x -eolc -noedit -m "DEV=BTRM:IN20:661" mgnt_unit.edl
+CHANNEL   BTRM:IN20:661       BTRM:IN20:661:STATMSG                 ----L
+   $FORCEPV BTRM:IN20:661:STATMSGSV -DATL 1 0
+

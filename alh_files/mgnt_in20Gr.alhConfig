@@ -1,0 +1,17 @@
+GROUP NULL MGNT:IN20GR:1
+   $COMMAND edm -x -eolc -noedit mgnt_in20_main.edl
+
+$ALIAS IN20GR
+$GUIDANCE
+in20 gun region Magnets
+   Group Name: MGNT:IN20GR:1
+   Summary PV:  MGNT:IN20GR:1:STATSUMY
+$END
+
+   INCLUDE MGNT:IN20GR:1 ./mgnt_in20Gr_lgps.alhConfig
+   INCLUDE MGNT:IN20GR:1 ./mgnt_in20Gr_quad.alhConfig
+   INCLUDE MGNT:IN20GR:1 ./mgnt_in20Gr_soln.alhConfig
+   INCLUDE MGNT:IN20GR:1 ./mgnt_in20Gr_xcor.alhConfig
+   INCLUDE MGNT:IN20GR:1 ./mgnt_in20Gr_ycor.alhConfig
+
+

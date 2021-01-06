@@ -1,0 +1,17 @@
+GROUP NULL MGNT:IN20IS:1
+   $COMMAND edm -x -eolc -noedit mgnt_in20_main.edl
+
+$ALIAS IN20IS
+$GUIDANCE
+in20 Dog Leg Region
+   Group Name: MGNT:IN20IS:1
+   Summary PV:  MGNT:IN20IS:1:STATSUMY
+$END
+
+   INCLUDE MGNT:IN20IS:1 ./mgnt_in20Is_bend.alhConfig
+   INCLUDE MGNT:IN20IS:1 ./mgnt_in20Is_lgps.alhConfig
+   INCLUDE MGNT:IN20IS:1 ./mgnt_in20Is_quad.alhConfig
+   INCLUDE MGNT:IN20IS:1 ./mgnt_in20Is_xcor.alhConfig
+   INCLUDE MGNT:IN20IS:1 ./mgnt_in20Is_ycor.alhConfig
+
+

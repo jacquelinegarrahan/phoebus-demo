@@ -1,0 +1,18 @@
+GROUP NULL XCOR:IN20IS:MG01
+   $COMMAND edm -x -eolc -noedit mgnt_in20_xcor.edl
+$ALIAS XCOR
+$GUIDANCE
+IN20IS xcor magnets
+   Group Name: XCOR:IN20IS:MG01
+   Summary PV:  XCOR:IN20IS:MG01:STATSUMY
+$END
+
+GROUP XCOR:IN20IS:MG01  XCOR:IN20:911
+   $COMMAND edm -x -eolc -noedit -m "DEV=XCOR:IN20:911" mgnt_unit.edl
+CHANNEL   XCOR:IN20:911       XCOR:IN20:911:STATMSG                 ----L
+   $FORCEPV XCOR:IN20:911:STATMSGSV -DATL 1 0
+
+GROUP XCOR:IN20IS:MG01  XCOR:IN20:951
+   $COMMAND edm -x -eolc -noedit -m "DEV=XCOR:IN20:951" mgnt_unit.edl
+CHANNEL   XCOR:IN20:951       XCOR:IN20:951:STATMSG                 ----L
+   $FORCEPV XCOR:IN20:951:STATMSGSV -DATL 1 0
