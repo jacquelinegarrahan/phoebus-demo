@@ -201,7 +201,7 @@ def parse_tree(top_level_file):
                             node_path = f"{current_level_node}/{parent}/{channel_name}"
 
 
-                            items[node_path] = AlarmLeaf(node_path, filename=filename)
+                            items[node_path] = AlarmLeaf(channel_name, filename=filename)
                             items[node_path].parent = parent_path
 
                             # store parent node
@@ -332,50 +332,60 @@ def parse_tree(top_level_file):
 
 class XMLBuilder:
 
-    def __init__(self, name):
-        self.configuration = ET.Element("config", name=name)
-        self.main = ET.SubElement(self.configuration, 'component', name="main")
+    def __init__(self, config_name, root):
+        self.configuration = ET.Element("config", name=config_name)
         self.groups = {}
+
+        self.added_pvs = []
 
 
     def add_group(self, group, parent_group = None):
-
-        if not parent_group:
-            self.groups[group] = ET.SubElement(self.main, 'component', name=group)
-        else:
-            self.groups[group] = ET.SubElement(self.groups[parent_group], 'component', name=group)
+        if group not in self.groups:
+            if not parent_group:
+                self.groups[group] = ET.SubElement(self.configuration, 'component', name=group)
+            else:
+                self.groups[group] = ET.SubElement(self.groups[parent_group], 'component', name=group)
 
 
     def add_pv(self, pvname, group):
-        pv = ET.SubElement(self.groups[group], "pv", name=pvname)
-        description = ET.SubElement(pv, "description")
-        enabled = ET.SubElement(description, "enabled")
-        enabled.text = 'true'
+        if pvname in self.added_pvs:
+            print(pvname)
+            print(group)
+
+        else:
+            self.added_pvs.append(pvname)
+            pv = ET.SubElement(self.groups[group], "pv", name=pvname)
+            description = ET.SubElement(pv, "description")
+            enabled = ET.SubElement(description, "enabled")
+            enabled.text = 'true'
 
     
 
-def handle_children(builder, tree, node):
-    builder.add_group(node.tag)
+def handle_children(builder, tree, node, parent_group=None):
     children = tree.children(node.identifier)
 
-    for child in children:
-        if isinstance(child.data, AlarmLeaf):
-            print("ADDING PV")
-            builder.add_pv(child.tag, node.tag)
+    if children:
+        builder.add_group(node.tag, parent_group=parent_group)
 
-        elif isinstance(child.data, AlarmNode):
-            handle_children(builder, tree, child)
+        for child in children:
+            if isinstance(child.data, AlarmLeaf):
+                builder.add_pv(child.tag, node.tag)
+
+            elif isinstance(child.data, AlarmNode):
+                handle_children(builder, tree, child, parent_group=node.tag)
 
 
 
-def build_config_file(tree):
+def build_config_file(tree, config_name):
 
     root = tree.root
-    builder = XMLBuilder(root)
+    builder = XMLBuilder(config_name, root)
     root_node = tree.get_node(root)
     handle_children(builder, tree, root_node)
 
-    with open ("TEST.xml", "wb") as f : 
+    breakpoint()
+
+    with open ("magnet_test.xml", "wb") as f : 
         file_str = ET.tostring(builder.configuration, encoding='utf8') 
         f.write(file_str)
 
@@ -384,6 +394,6 @@ def build_config_file(tree):
 if __name__ == "__main__":
     items, top_level_node = parse_tree("alh_files/mgnt.alhConfig")
     tree=build_tree(items, top_level_node)
-    build_config_file(tree)
+    build_config_file(tree, "Magnets")
 
 
