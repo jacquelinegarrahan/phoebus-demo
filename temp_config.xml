@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf8'?>
-<config name="Accelerator">
+<config name="Temp">
     <component name="TEMP:LI23:1">
         <component name="KLYS:LI23:TM01" />
         <component name="KLYS:LI23:11">
