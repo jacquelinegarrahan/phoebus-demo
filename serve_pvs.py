@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     pvdb = {}
 
-    for i in range(0, 6):
+    for i in range(1, 7):
         print("Serving...")
         pvname=f"PV{i}"
         pvdb[pvname] = {
