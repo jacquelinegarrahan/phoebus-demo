@@ -385,14 +385,14 @@ def build_config_file(tree, config_name):
 
     breakpoint()
 
-    with open ("magnet_test.xml", "wb") as f : 
+    with open ("temp_config.xml", "wb") as f : 
         file_str = ET.tostring(builder.configuration, encoding='utf8') 
         f.write(file_str)
 
 
 
 if __name__ == "__main__":
-    items, top_level_node = parse_tree("alh_files/mgnt.alhConfig")
+    items, top_level_node = parse_tree("alh_files/temp_li23.alhConfig")
     tree=build_tree(items, top_level_node)
     build_config_file(tree, "Accelerator")
 
