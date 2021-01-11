@@ -1,62 +1,63 @@
 <?xml version='1.0' encoding='utf8'?>
-<config name="Temp">
-    <component name="TEMP:LI23:1">
-        <component name="KLYS:LI23:TM01" />
-        <component name="KLYS:LI23:11">
-            <pv name="KLYS:LI23:11:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
-        </component>
-        <component name="KLYS:LI23:21">
-            <pv name="KLYS:LI23:21:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
-        </component>
-        <component name="KLYS:LI23:31">
-            <pv name="KLYS:LI23:31:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
-        </component>
-        <component name="KLYS:LI23:41">
-            <pv name="KLYS:LI23:41:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
-        </component>
-        <component name="KLYS:LI23:51">
-            <pv name="KLYS:LI23:51:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
-        </component>
-        <component name="KLYS:LI23:61">
-            <pv name="KLYS:LI23:61:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
-        </component>
-        <component name="KLYS:LI23:71">
-            <pv name="KLYS:LI23:71:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
-        </component>
-        <component name="KLYS:LI23:81">
-            <pv name="KLYS:LI23:81:DL_WG_TEMP">
-                <description>
-                    <enabled>true</enabled>
-                </description>
-            </pv>
+<config name="Demo">
+    <component name="LI23">
+        <component name="KLYS">
+            <component name="KLYS:LI23:11">
+                <pv name="KLYS:LI23:11:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
+            <component name="KLYS:LI23:21">
+                <pv name="KLYS:LI23:21:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
+            <component name="KLYS:LI23:31">
+                <pv name="KLYS:LI23:31:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
+            <component name="KLYS:LI23:41">
+                <pv name="KLYS:LI23:41:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
+            <component name="KLYS:LI23:51">
+                <pv name="KLYS:LI23:51:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
+            <component name="KLYS:LI23:61">
+                <pv name="KLYS:LI23:61:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
+            <component name="KLYS:LI23:71">
+                <pv name="KLYS:LI23:71:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
+            <component name="KLYS:LI23:81">
+                <pv name="KLYS:LI23:81:DL_WG_TEMP">
+                    <description>
+                        <enabled>true</enabled>
+                    </description>
+                </pv>
+            </component>
         </component>
     </component>
 </config>

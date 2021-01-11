@@ -130,6 +130,7 @@ def parse_tree(top_level_file):
             in_guidance = False
             in_calc = False
             target = None
+            parent_group = None
             if not in_top_level:
                 current_level_node = inclusions[filename]
 
@@ -190,16 +191,20 @@ def parse_tree(top_level_file):
 
                             # update target 
                             target = node_path
+                            parent_group = parent
 
                         # process channel
                         elif split[0] == "CHANNEL":
                             channel_name = split[2]
                             parent = split[1]
 
+                            if parent_group and parent_group != parent:
+                                parent_path = f"{current_level_node}/{parent_group}/{parent}"
+                                node_path = f"{current_level_node}/{parent_group}/{parent}/{channel_name}"
 
-                            parent_path = f"{current_level_node}/{parent}"
-                            node_path = f"{current_level_node}/{parent}/{channel_name}"
-
+                            else:
+                                parent_path = f"{current_level_node}/{parent}"
+                                node_path = f"{current_level_node}/{parent}/{channel_name}"
 
                             items[node_path] = AlarmLeaf(channel_name, filename=filename)
                             items[node_path].parent = parent_path
@@ -208,7 +213,6 @@ def parse_tree(top_level_file):
                             if parent_path not in items:
                                 items[parent_path] = AlarmNode(parent, filename=filename)
                                 items[current_level_node].add_child(parent_path)
-
 
                             items[node_path].parent = parent_path
                             items[parent_path].add_child(node_path)
@@ -339,18 +343,21 @@ class XMLBuilder:
         self.added_pvs = []
 
 
-    def add_group(self, group, parent_group = None):
+    def add_group(self, group, data, parent_group = None):
+        group_name = group
+        if data.alias:
+            group_name = data.alias
+
         if group not in self.groups:
             if not parent_group:
-                self.groups[group] = ET.SubElement(self.configuration, 'component', name=group)
+                self.groups[group] = ET.SubElement(self.configuration, 'component', name=group_name)
             else:
-                self.groups[group] = ET.SubElement(self.groups[parent_group], 'component', name=group)
+                self.groups[group] = ET.SubElement(self.groups[parent_group], 'component', name=group_name)
 
 
-    def add_pv(self, pvname, group):
+    def add_pv(self, pvname, group, data):
         if pvname in self.added_pvs:
-            print(pvname)
-            print(group)
+            pass
 
         else:
             self.added_pvs.append(pvname)
@@ -359,17 +366,22 @@ class XMLBuilder:
             enabled = ET.SubElement(description, "enabled")
             enabled.text = 'true'
 
+      #      if data.alias:
+      #          alias = ET.SubElement(pv, "title")
+      #          alias.text = data.alias
+
+
     
 
 def handle_children(builder, tree, node, parent_group=None):
     children = tree.children(node.identifier)
 
     if children:
-        builder.add_group(node.tag, parent_group=parent_group)
+        builder.add_group(node.tag, node.data, parent_group=parent_group)
 
         for child in children:
             if isinstance(child.data, AlarmLeaf):
-                builder.add_pv(child.tag, node.tag)
+                builder.add_pv(child.tag, node.tag, node.data)
 
             elif isinstance(child.data, AlarmNode):
                 handle_children(builder, tree, child, parent_group=node.tag)
@@ -382,8 +394,6 @@ def build_config_file(tree, config_name):
     builder = XMLBuilder(config_name, root)
     root_node = tree.get_node(root)
     handle_children(builder, tree, root_node)
-
-    breakpoint()
 
     with open ("temp_config.xml", "wb") as f : 
         file_str = ET.tostring(builder.configuration, encoding='utf8') 
