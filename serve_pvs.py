@@ -23,8 +23,8 @@ if __name__ == "__main__":
                         "type": "float",
                         "value": 0.0,
                         "hihi": 10.0,
-                        "hi":  5.0,
-                        "lo": -5.0,
+                        "high":  5.0,
+                        "low": -5.0,
                         "lolo": -10.0
                     }
 
