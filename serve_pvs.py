@@ -16,16 +16,16 @@ if __name__ == "__main__":
 
     pvdb = {}
 
-    for i in range(1, 7):
+    for i in range(1, 8):
         print("Serving...")
         pvname=f"PV{i}"
         pvdb[pvname] = {
                         "type": "float",
-                        "value": 0.5,
-                        "hihi": 3.0,
-                        "hi":  2.0,
-                        "lo": 0.5,
-                        "lolo": 0.0
+                        "value": 0.0,
+                        "hihi": 10.0,
+                        "hi":  5.0,
+                        "lo": -5.0,
+                        "lolo": -10.0
                     }
 
     server = SimpleServer()
