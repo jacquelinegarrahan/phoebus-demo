@@ -1,11 +1,15 @@
 import argparse
-from pcaspy import Driver, SimpleServer
+import time
+from pcaspy import Driver, SimpleServer, driver, cas
 from pcaspy.tools import ServerThread
-
 
 class myDriver(Driver):
     def  __init__(self):
         super(myDriver, self).__init__()
+
+        # fix the invalid bug
+        for pv in self.pvDB:
+            self.setParam(pv, self.pvDB[pv].value)
 
 
 if __name__ == "__main__":
