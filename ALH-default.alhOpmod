@@ -1,0 +1,131 @@
+11-Jan-2021 12:53:47 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 12:53:47 : Setup Config File : alh_files/temp_li23_klys.alhConfig
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:11:DL_WG_TEMPSV]
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:21:DL_WG_TEMPSV]
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:31:DL_WG_TEMPSV]
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:41:DL_WG_TEMPSV]
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:51:DL_WG_TEMPSV]
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:61:DL_WG_TEMPSV]
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:71:DL_WG_TEMPSV]
+11-Jan-2021 12:53:47 : Channel forcePV RESET <-----> [0] [KLYS:LI23:81:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 12:55:21 : Setup Config File : alh_files/temp_li23_klys.alhConfig
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:11:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:21:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:31:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:41:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:51:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:61:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:71:DL_WG_TEMPSV]
+11-Jan-2021 12:55:21 : Channel forcePV RESET <-----> [0] [KLYS:LI23:81:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 12:55:57 : Setup Config File : alh_files/temp_li23_klys.alhConfig
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:11:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:21:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:31:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:41:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:51:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:61:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:71:DL_WG_TEMPSV]
+11-Jan-2021 12:55:57 : Channel forcePV RESET <-----> [0] [KLYS:LI23:81:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 12:56:45 : Setup Config File : alh_files/temp_li23_klys.alhConfig
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:11:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:21:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:31:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:41:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:51:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:61:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:71:DL_WG_TEMPSV]
+11-Jan-2021 12:56:45 : Channel forcePV RESET <-----> [0] [KLYS:LI23:81:DL_WG_TEMPSV]
+11-Jan-2021 12:59:16 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 12:59:16 : Setup Config File : alh_files/temp_li23_klys.alhConfig
+11-Jan-2021 12:59:16 : No write access for channel KLYS:LI23:11:DL_WG_TEMP 
+11-Jan-2021 12:59:16 : No write access for channel KLYS:LI23:21:DL_WG_TEMP 
+11-Jan-2021 12:59:16 : No write access for channel KLYS:LI23:31:DL_WG_TEMP 
+11-Jan-2021 12:59:16 : No write access for channel KLYS:LI23:41:DL_WG_TEMP 
+11-Jan-2021 12:59:16 : No write access for channel KLYS:LI23:51:DL_WG_TEMP 
+11-Jan-2021 12:59:16 : No write access for channel KLYS:LI23:61:DL_WG_TEMP 
+11-Jan-2021 12:59:16 : No write access for channel KLYS:LI23:71:DL_WG_TEMP 
+11-Jan-2021 12:59:17 : No write access for channel KLYS:LI23:81:DL_WG_TEMP 
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:11:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:11:DL_WG_TEMPSV]
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:21:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:21:DL_WG_TEMPSV]
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:31:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:31:DL_WG_TEMPSV]
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:41:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:41:DL_WG_TEMPSV]
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:51:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:51:DL_WG_TEMPSV]
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:61:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:61:DL_WG_TEMPSV]
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:71:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:71:DL_WG_TEMPSV]
+11-Jan-2021 12:59:17 : KLYS: KLYS:LI23:81:DL_WG_TEMP:  Channel forcePV RESET <-----> [0] [KLYS:LI23:81:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 13:00:49 : Setup Config File : alh_files/temp_li23_klys.alhConfig
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:11:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:21:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:31:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:41:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:51:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:61:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:71:DL_WG_TEMPSV]
+11-Jan-2021 13:00:49 : Channel forcePV RESET <-----> [0] [KLYS:LI23:81:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 14:07:54 : Setup Config File : alh_files/temp_li23_klys.alhConfig
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:11:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:21:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:31:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:41:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:51:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:61:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:71:DL_WG_TEMPSV]
+11-Jan-2021 14:07:54 : Channel forcePV RESET <-----> [0] [KLYS:LI23:81:DL_WG_TEMPSV]
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:11:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.1:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:11:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.1:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:11:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.2:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:21:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.4:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:21:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.3:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:31:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.5:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:31:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.6:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:41:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.7:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:41:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.8:5 
+11-Jan-2021 14:14:30 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:11:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.2:5 
+11-Jan-2021 14:14:31 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:21:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.4:5 
+11-Jan-2021 14:14:31 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:21:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.3:5 
+11-Jan-2021 14:14:31 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:31:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.5:5 
+11-Jan-2021 14:14:31 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:31:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.6:5 
+11-Jan-2021 14:14:31 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:41:DL_WG_TEMP", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.7:5 
+11-Jan-2021 14:14:31 : KLYS: : Channel Access Exception: Identical process variable names on multiple servers  Context: Channel: "KLYS:LI23:41:DL_WG_TEMPSV", Connecting to: lcls-prod01.slac.stanford.edu:5068, Ignored: 0.0.0.8:5 
+11-Jan-2021 14:16:32 : KLYS: : Setup---Exit
+11-Jan-2021 14:36:30 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 14:36:30 : Setup Config File : alh_files/demo.alhConfig
+11-Jan-2021 14:36:30 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV1 
+11-Jan-2021 14:36:30 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV2 
+11-Jan-2021 14:36:30 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV3 
+11-Jan-2021 14:36:30 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV6 
+11-Jan-2021 14:36:30 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV7 
+11-Jan-2021 14:36:30 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV4 
+11-Jan-2021 14:36:30 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV5 
+11-Jan-2021 14:36:56 : Demo: : Channel Access Exception: Virtual circuit disconnect  Context: aird-b50-srv01.slac.stanford.edu:5064 
+11-Jan-2021 14:37:00 : Demo: : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV1 
+11-Jan-2021 14:37:00 : Demo: : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV2 
+11-Jan-2021 14:37:00 : Demo: : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV3 
+11-Jan-2021 14:37:00 : Demo: : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV6 
+11-Jan-2021 14:37:00 : Demo: : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV7 
+11-Jan-2021 14:37:00 : Demo: : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV4 
+11-Jan-2021 14:37:00 : Demo: : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV5 
+11-Jan-2021 14:38:16 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 14:38:16 : Setup Config File : alh_files/demo.alhConfig
+11-Jan-2021 14:38:16 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV1 
+11-Jan-2021 14:38:16 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV2 
+11-Jan-2021 14:38:16 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV3 
+11-Jan-2021 14:38:17 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV6 
+11-Jan-2021 14:38:17 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV7 
+11-Jan-2021 14:38:17 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV4 
+11-Jan-2021 14:38:17 : alCaNewAlarmEvent failed: Return status: Channel read request failed  for PV DEMO:PV5 
+11-Jan-2021 14:39:43 : Demo: : Setup---Exit
+11-Jan-2021 14:54:51 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 14:54:51 : Setup Config File : alh_files/demo.alhConfig
+11-Jan-2021 14:59:50 : Demo: : Setup---Exit
+11-Jan-2021 16:48:45 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 16:48:45 : Setup Config File : alh_files/demo.alhConfig
+11-Jan-2021 16:49:55 : Demo: : Setup---Exit
+11-Jan-2021 16:50:17 : Setup Alarm Log File : ALH-default.alhAlarm
+11-Jan-2021 16:50:17 : Setup Config File : alh_files/demo.alhConfig
+11-Jan-2021 16:51:56 : Demo: : Setup---Exit
