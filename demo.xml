@@ -2,43 +2,30 @@
 <config name="Demo">
     <component name="GROUP1">
         <pv name="DEMO:PV1">
-            <description>
-                <enabled>true</enabled>
-            </description>
+            <enabled>true</enabled>
+            <filter>DEMO:PV2 > 10</filter>
         </pv>
         <pv name="DEMO:PV2">
-            <description>
-                <enabled>true</enabled>
-            </description>
+            <enabled>true</enabled>
         </pv>
         <pv name="DEMO:PV3">
-            <description>
-                <enabled>true</enabled>
-            </description>
+            <enabled>true</enabled>
         </pv>
     </component>
     <component name="GROUP2">
         <component name="GROUP3">
             <pv name="DEMO:PV4">
-                <description>
-                    <enabled>true</enabled>
-                </description>
+                <enabled>true</enabled>
             </pv>
             <pv name="DEMO:PV5">
-                <description>
-                    <enabled>true</enabled>
-                </description>
+                <enabled>true</enabled>
             </pv>
         </component>
         <pv name="DEMO:PV6">
-            <description>
-                <enabled>true</enabled>
-            </description>
+            <enabled>true</enabled>
         </pv>
         <pv name="DEMO:PV7">
-            <description>
-                <enabled>true</enabled>
-            </description>
+            <enabled>true</enabled>
         </pv>
     </component>
 </config>
