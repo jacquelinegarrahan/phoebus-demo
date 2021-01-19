@@ -21,12 +21,14 @@ class SevrPV:
         self.name = name
 
 class ForcePV:
-    def __init__(self, force_mask, force_value, reset_value, name=None, is_calc=False, calc_expressions=[]):
+    def __init__(self, force_mask, force_value, reset_value):
         self.force_mask=force_mask
         self.force_value = force_value
+        self.reset_value = reset_value
         self.name = name
-        self.is_calc = is_calc
-        self.calc_expressions = calc_expressions
+        self.is_calc = False
+        self.calc_expressions = []
+        self.base_calc = ""
 
     def add_calc(self, expression):
         self.calc_expressions.append(expression)
@@ -88,11 +90,8 @@ def build_tree(items, top_level_node):
                 print(items[child].name)
                 tree.create_node(items[child].name, child, parent=node, data=items[child])
 
-            
             # add children to process
             to_process += children
-        else:
-            print(f"NO CHILDREN  {node}")
         
         processed.append(node)
 
@@ -246,12 +245,14 @@ def parse_tree(top_level_file):
                             if len(split) == 5:
                                 reset_value = split[4]
 
+                            items[target].force_pv = ForcePV(force_mask, force_value, reset_value)
+
                             if split[1] == "CALC":
-                                items[target].force_pv = ForcePV(force_mask, force_value, reset_value, is_calc=True)
+                                items[target].force_pv.is_calc = True
                             
                             else:
                                 force_pv_name = split[1]
-                                items[target].force_pv = ForcePV(force_mask, force_value, reset_value, name=force_pv_name)
+                                items[target].force_pv.name = force_pv_name
 
 
                         # CONFIGURE GUIDANCE
@@ -295,6 +296,8 @@ def parse_tree(top_level_file):
                         elif split[0][0] == "#":
                             pass
 
+
+                        ### HANDLED INCORRECTLY!!!! ONLY ONE HEARTBEATPV
                         elif split[0] == "$HEARTBEATPV":
 
                             heartbeat_pv_name = split[1]
@@ -335,12 +338,11 @@ def parse_tree(top_level_file):
 
 
 class XMLBuilder:
-
     def __init__(self, config_name, root):
         self.configuration = ET.Element("config", name=config_name)
         self.groups = {}
-
         self.added_pvs = []
+        self.settings_artifacts = []
 
 
     def add_group(self, group, data, parent_group = None):
@@ -362,9 +364,31 @@ class XMLBuilder:
         else:
             self.added_pvs.append(pvname)
             pv = ET.SubElement(self.groups[group], "pv", name=pvname)
-            description = ET.SubElement(pv, "description")
-            enabled = ET.SubElement(description, "enabled")
+        #    description = ET.SubElement(pv, "description")
+            enabled = ET.SubElement(pv, "enabled")
             enabled.text = 'true'
+
+            if data.force_pv is not None:
+                filter_pv = ET.SubElement(pv, "filter")
+                filter_pv.text = self._process_forcepv(data.force_pv)
+
+
+    def _process_forcepv(self, force_pv):
+
+        text = force_pv.name
+        if force_pv.is_calc:
+            formatting = force_pv.calc_expressions.pop("A")
+
+            for key, value in force_pv.calc_expressions.items():
+                formatting.replace(key, value)
+
+        if data.force_pv.force_value:
+            text.append(f" != {data.force_pv.force_value.force_value}")
+
+
+
+        return force_pv_text
+                
 
       #      if data.alias:
       #          alias = ET.SubElement(pv, "title")
@@ -381,7 +405,7 @@ def handle_children(builder, tree, node, parent_group=None):
 
         for child in children:
             if isinstance(child.data, AlarmLeaf):
-                builder.add_pv(child.tag, node.tag, node.data)
+                builder.add_pv(child.tag, node.tag, child.data)
 
             elif isinstance(child.data, AlarmNode):
                 handle_children(builder, tree, child, parent_group=node.tag)
