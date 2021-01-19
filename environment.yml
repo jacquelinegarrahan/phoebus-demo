@@ -9,3 +9,4 @@ dependencies:
   - psutil
   - treelib
   - kafka-python
+  - pyepics
