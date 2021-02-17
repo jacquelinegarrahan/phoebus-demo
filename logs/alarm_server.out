@@ -1,0 +1,9 @@
+'2021-02-16 18:22:20 WARNING org.phoebus.applications.alarm.server.AlarmServerPV checkConnection /Demo/GROUP1/DEMO:PV1 connection timed out
+''2021-02-16 18:22:20 WARNING org.phoebus.applications.alarm.server.AlarmServerPV checkConnection /Demo/GROUP1/DEMO:PV2 connection timed out
+''2021-02-16 18:22:20 WARNING org.phoebus.applications.alarm.server.AlarmServerPV checkConnection /Demo/GROUP1/DEMO:PV3 connection timed out
+''2021-02-16 18:22:20 WARNING org.phoebus.applications.alarm.server.AlarmServerPV checkConnection /Demo/GROUP2/DEMO:PV6 connection timed out
+''2021-02-16 18:22:20 WARNING org.phoebus.applications.alarm.server.AlarmServerPV checkConnection /Demo/GROUP2/DEMO:PV7 connection timed out
+''2021-02-16 18:22:20 WARNING org.phoebus.applications.alarm.server.AlarmServerPV checkConnection /Demo/GROUP2/GROUP3/DEMO:PV4 connection timed out
+''2021-02-16 18:22:20 WARNING org.phoebus.applications.alarm.server.AlarmServerPV checkConnection /Demo/GROUP2/GROUP3/DEMO:PV5 connection timed out
+''2021-02-16 19:03:08 WARNING org.phoebus.applications.alarm.server.Filter$FilterPVhandler accept PV DEMO:PV2 (var. DEMO:PV2) disconnected
+'

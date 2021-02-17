@@ -24,3 +24,5 @@
 ``` $ softIoc -d demo.db ```  
 
 
+
+ bash scripts/start_services.sh -logging logging.properties -config Demo -settings demo_settings.ini -config-file demo.xml

@@ -1,0 +1,84 @@
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+Feb 16, 2021 6:21:45 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Feb 16, 2021 6:21:45 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.19]
+Feb 16, 2021 6:21:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring embedded WebApplicationContext
+Feb 16, 2021 6:21:46 PM org.phoebus.framework.preferences.PreferencesReader <init>
+SEVERE: Cannot read default preference settings for class org.phoebus.alarm.logging.AlarmLoggingService from /alarm_logging_service.properties
+'2021-02-16 18:41:42 SEVERE org.apache.kafka.streams.errors.LogAndFailExceptionHandler handle Exception caught during Deserialization, taskId: 0_0, topic: Demo, partition: 0, offset: 169
+org.apache.kafka.common.errors.SerializationException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "command" (class org.phoebus.applications.alarm.messages.AlarmMessage), not marked as ignorable (23 known properties: "enabled", "delay", "latch", "message", "host", "notify", "user", "time", "annunciating", "displays", "filter", "description", "actions", "latching", "key", "current_message", "current_severity", "commands", "count", "value", "guidance", "severity", "mode"])
+ at [Source: (byte[])"{"user": "pydm", "host": "", "command": "acknowledge"}"; line: 1, column: 42] (through reference chain: org.phoebus.applications.alarm.messages.AlarmMessage["command"])
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "command" (class org.phoebus.applications.alarm.messages.AlarmMessage), not marked as ignorable (23 known properties: "enabled", "delay", "latch", "message", "host", "notify", "user", "time", "annunciating", "displays", "filter", "description", "actions", "latching", "key", "current_message", "current_severity", "commands", "count", "value", "guidance", "severity", "mode"])
+ at [Source: (byte[])"{"user": "pydm", "host": "", "command": "acknowledge"}"; line: 1, column: 42] (through reference chain: org.phoebus.applications.alarm.messages.AlarmMessage["command"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:823)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1153)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1589)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3091)
+	at org.phoebus.applications.alarm.messages.MessageParser.deserialize(MessageParser.java:54)
+	at org.apache.kafka.common.serialization.ExtendedDeserializer$Wrapper.deserialize(ExtendedDeserializer.java:65)
+	at org.apache.kafka.common.serialization.ExtendedDeserializer$Wrapper.deserialize(ExtendedDeserializer.java:55)
+	at org.apache.kafka.streams.processor.internals.SourceNode.deserializeValue(SourceNode.java:63)
+	at org.apache.kafka.streams.processor.internals.RecordDeserializer.deserialize(RecordDeserializer.java:66)
+	at org.apache.kafka.streams.processor.internals.RecordQueue.addRawRecords(RecordQueue.java:97)
+	at org.apache.kafka.streams.processor.internals.PartitionGroup.addRawRecords(PartitionGroup.java:117)
+	at org.apache.kafka.streams.processor.internals.StreamTask.addRecords(StreamTask.java:638)
+	at org.apache.kafka.streams.processor.internals.StreamThread.addRecordsToTasks(StreamThread.java:936)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:831)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:767)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:736)
+
+'Exception in thread "streams-Demo-alarm-messages-978ee68a-9ec9-4434-b289-15e51bc9849f-StreamThread-1" org.apache.kafka.streams.errors.StreamsException: Deserialization exception handler is set to fail upon a deserialization error. If you would rather have the streaming pipeline continue after a deserialization error, please set the default.deserialization.exception.handler appropriately.
+	at org.apache.kafka.streams.processor.internals.RecordDeserializer.deserialize(RecordDeserializer.java:80)
+	at org.apache.kafka.streams.processor.internals.RecordQueue.addRawRecords(RecordQueue.java:97)
+	at org.apache.kafka.streams.processor.internals.PartitionGroup.addRawRecords(PartitionGroup.java:117)
+	at org.apache.kafka.streams.processor.internals.StreamTask.addRecords(StreamTask.java:638)
+	at org.apache.kafka.streams.processor.internals.StreamThread.addRecordsToTasks(StreamThread.java:936)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:831)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:767)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:736)
+Caused by: org.apache.kafka.common.errors.SerializationException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "command" (class org.phoebus.applications.alarm.messages.AlarmMessage), not marked as ignorable (23 known properties: "enabled", "delay", "latch", "message", "host", "notify", "user", "time", "annunciating", "displays", "filter", "description", "actions", "latching", "key", "current_message", "current_severity", "commands", "count", "value", "guidance", "severity", "mode"])
+ at [Source: (byte[])"{"user": "pydm", "host": "", "command": "acknowledge"}"; line: 1, column: 42] (through reference chain: org.phoebus.applications.alarm.messages.AlarmMessage["command"])
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "command" (class org.phoebus.applications.alarm.messages.AlarmMessage), not marked as ignorable (23 known properties: "enabled", "delay", "latch", "message", "host", "notify", "user", "time", "annunciating", "displays", "filter", "description", "actions", "latching", "key", "current_message", "current_severity", "commands", "count", "value", "guidance", "severity", "mode"])
+ at [Source: (byte[])"{"user": "pydm", "host": "", "command": "acknowledge"}"; line: 1, column: 42] (through reference chain: org.phoebus.applications.alarm.messages.AlarmMessage["command"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:823)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1153)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1589)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3091)
+	at org.phoebus.applications.alarm.messages.MessageParser.deserialize(MessageParser.java:54)
+	at org.apache.kafka.common.serialization.ExtendedDeserializer$Wrapper.deserialize(ExtendedDeserializer.java:65)
+	at org.apache.kafka.common.serialization.ExtendedDeserializer$Wrapper.deserialize(ExtendedDeserializer.java:55)
+	at org.apache.kafka.streams.processor.internals.SourceNode.deserializeValue(SourceNode.java:63)
+	at org.apache.kafka.streams.processor.internals.RecordDeserializer.deserialize(RecordDeserializer.java:66)
+	at org.apache.kafka.streams.processor.internals.RecordQueue.addRawRecords(RecordQueue.java:97)
+	at org.apache.kafka.streams.processor.internals.PartitionGroup.addRawRecords(PartitionGroup.java:117)
+	at org.apache.kafka.streams.processor.internals.StreamTask.addRecords(StreamTask.java:638)
+	at org.apache.kafka.streams.processor.internals.StreamThread.addRecordsToTasks(StreamThread.java:936)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:831)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:767)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:736)
+Exception in thread "Thread-4" java.lang.NullPointerException
+	at org.phoebus.alarm.logging.ElasticClientHelper.lambda$new$0(ElasticClientHelper.java:41)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Shutting streams Done.
