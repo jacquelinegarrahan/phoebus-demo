@@ -11,11 +11,6 @@ def parse_record(record):
         states[track] = json.loads(record.value.decode('utf-8'))
 
 
-# ADD TREE PARSER
-
-
-
-
 if __name__ == "__main__":
     # get time in ms
     start = time.time() * 1000
@@ -37,6 +32,7 @@ if __name__ == "__main__":
         message = consumer.poll()
         for topic_partition in message:
             for record in message[topic_partition]:
+                print(record)
                 last_time = record.timestamp
                 if last_time < start:
                     parse_record(record)
